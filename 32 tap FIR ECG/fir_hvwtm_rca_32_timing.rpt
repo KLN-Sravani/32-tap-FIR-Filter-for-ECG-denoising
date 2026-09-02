@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fir_hvwtm_rca_32
+Version: V-2023.12
+Date   : Tue Jun 16 02:07:43 2026
+****************************************
+
+Operating Conditions: tt0p78vn40c   Library: saed32rvt_tt0p78vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: dff_2/d_out_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: y_out[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir_hvwtm_rca_32   35000                 saed32rvt_tt0p78vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  dff_2/d_out_reg[0]/CLK (DFFX1_RVT)       0.00       0.00 r
+  dff_2/d_out_reg[0]/Q (DFFX1_RVT)         0.22       0.22 f
+  U7567/Y (NAND2X0_RVT)                    0.08       0.31 r
+  U6303/Y (INVX1_RVT)                      0.06       0.36 f
+  U7578/CO (FADDX1_RVT)                    0.15       0.51 f
+  U7576/CO (FADDX1_RVT)                    0.16       0.67 f
+  U7575/CO (FADDX1_RVT)                    0.16       0.83 f
+  U7574/CO (FADDX1_RVT)                    0.16       0.98 f
+  U7573/CO (FADDX1_RVT)                    0.16       1.14 f
+  U7572/CO (FADDX1_RVT)                    0.16       1.29 f
+  U7571/CO (FADDX1_RVT)                    0.16       1.45 f
+  U7570/CO (FADDX1_RVT)                    0.16       1.60 f
+  U7569/CO (FADDX1_RVT)                    0.16       1.76 f
+  U7568/CO (FADDX1_RVT)                    0.16       1.91 f
+  U7587/CO (FADDX1_RVT)                    0.16       2.07 f
+  U7590/CO (FADDX1_RVT)                    0.16       2.22 f
+  U7599/CO (FADDX1_RVT)                    0.16       2.38 f
+  U7701/CO (FADDX1_RVT)                    0.16       2.54 f
+  U7588/S (FADDX1_RVT)                     0.33       2.86 r
+  U6517/Y (INVX2_RVT)                      0.16       3.02 f
+  U6407/Y (INVX1_RVT)                      0.17       3.19 r
+  U7637/Y (NAND3X0_RVT)                    0.12       3.31 f
+  U7638/Y (OA221X1_RVT)                    0.16       3.47 f
+  U6194/Y (INVX1_RVT)                      0.09       3.56 r
+  U7647/Y (AO22X1_RVT)                     0.13       3.69 r
+  U7650/CO (FADDX1_RVT)                    0.15       3.84 r
+  U7662/CO (FADDX1_RVT)                    0.16       4.00 r
+  U7649/CO (FADDX1_RVT)                    0.17       4.17 r
+  U7669/CO (FADDX1_RVT)                    0.17       4.34 r
+  U7670/S (FADDX1_RVT)                     0.26       4.61 f
+  U6576/Y (OR3X1_RVT)                      0.12       4.73 f
+  U6122/Y (INVX0_RVT)                      0.05       4.78 r
+  U7671/Y (AO221X1_RVT)                    0.10       4.88 r
+  U7684/S (FADDX1_RVT)                     0.24       5.12 f
+  U6097/Y (INVX0_RVT)                      0.07       5.19 r
+  U7687/Y (NAND3X0_RVT)                    0.07       5.26 f
+  U7688/Y (AOI22X1_RVT)                    0.14       5.40 r
+  U7712/CO (FADDX1_RVT)                    0.18       5.58 r
+  U7722/S (FADDX1_RVT)                     0.26       5.85 f
+  U7916/SO (HADDX1_RVT)                    0.20       6.04 r
+  U7917/SO (HADDX1_RVT)                    0.17       6.22 f
+  U7921/Y (AO222X1_RVT)                    0.18       6.40 f
+  U8079/CO (FADDX1_RVT)                    0.15       6.55 f
+  U8076/CO (FADDX1_RVT)                    0.16       6.71 f
+  U8242/CO (FADDX1_RVT)                    0.16       6.86 f
+  U8383/CO (FADDX1_RVT)                    0.15       7.02 f
+  U6347/Y (INVX1_RVT)                      0.07       7.09 r
+  U8474/Y (AO222X1_RVT)                    0.16       7.24 r
+  U6252/Y (INVX1_RVT)                      0.06       7.30 f
+  U8475/S (FADDX1_RVT)                     0.25       7.55 r
+  U8535/SO (HADDX1_RVT)                    0.17       7.72 f
+  U8537/Y (AO222X1_RVT)                    0.19       7.92 f
+  U8558/S (FADDX1_RVT)                     0.29       8.20 r
+  U8585/SO (HADDX1_RVT)                    0.17       8.37 f
+  U8586/Y (AO222X1_RVT)                    0.17       8.54 f
+  U8614/S (FADDX1_RVT)                     0.29       8.82 r
+  U8635/SO (HADDX1_RVT)                    0.17       8.99 f
+  U8636/Y (AO222X1_RVT)                    0.17       9.16 f
+  U8668/S (FADDX1_RVT)                     0.29       9.45 r
+  U8669/SO (HADDX1_RVT)                    0.18       9.63 f
+  U8670/Y (AO222X1_RVT)                    0.17       9.80 f
+  U9081/S (FADDX1_RVT)                     0.29      10.08 r
+  U6624/Y (XOR2X1_RVT)                     0.21      10.30 f
+  U9091/Y (AO222X1_RVT)                    0.20      10.50 f
+  U9347/S (FADDX1_RVT)                     0.29      10.79 r
+  U9350/SO (HADDX1_RVT)                    0.18      10.97 f
+  U9443/Y (AO222X1_RVT)                    0.18      11.15 f
+  U6402/Y (INVX1_RVT)                      0.06      11.21 r
+  U9445/Y (OA22X1_RVT)                     0.09      11.30 r
+  U9447/Y (AO22X1_RVT)                     0.11      11.41 r
+  U9451/S (FADDX1_RVT)                     0.27      11.68 f
+  U9697/S (FADDX1_RVT)                     0.30      11.98 r
+  U9698/SO (HADDX1_RVT)                    0.17      12.15 f
+  U9986/Y (AO222X1_RVT)                    0.19      12.34 f
+  U10025/S (FADDX1_RVT)                    0.28      12.61 r
+  U10026/S (FADDX1_RVT)                    0.24      12.85 f
+  U10027/SO (HADDX1_RVT)                   0.19      13.03 r
+  U10131/Y (AO222X1_RVT)                   0.16      13.20 r
+  U10132/Y (AO222X1_RVT)                   0.17      13.36 r
+  U5744/Y (INVX0_RVT)                      0.06      13.43 f
+  U10421/S (FADDX1_RVT)                    0.27      13.70 r
+  U10422/SO (HADDX1_RVT)                   0.17      13.86 f
+  U10530/Y (AO222X1_RVT)                   0.20      14.06 f
+  U10953/S (FADDX1_RVT)                    0.27      14.33 r
+  U10954/SO (HADDX1_RVT)                   0.16      14.49 f
+  U11473/CO (FADDX1_RVT)                   0.15      14.65 f
+  U11472/CO (FADDX1_RVT)                   0.17      14.82 f
+  U10955/Y (OR2X1_RVT)                     0.10      14.92 f
+  U10957/Y (AO22X1_RVT)                    0.13      15.04 f
+  U10975/S (FADDX1_RVT)                    0.26      15.30 r
+  U6768/S (FADDX1_RVT)                     0.21      15.50 f
+  y_out[31] (out)                          0.00      15.50 f
+  data arrival time                                  15.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fir_hvwtm_rca_32
+Version: V-2023.12
+Date   : Tue Jun 16 02:07:43 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt0p78vn40c (File: /home/ece/Downloads/C-DAC_july24/ref/lib/stdcell_rvt/saed32rvt_tt0p78vn40c.db)
+
+
+Operating Conditions: tt0p78vn40c   Library: saed32rvt_tt0p78vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fir_hvwtm_rca_32       35000             saed32rvt_tt0p78vn40c
+
+
+Global Operating Voltage = 0.78 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 150.9562 uW   (78%)
+  Net Switching Power  =  41.4576 uW   (22%)
+                         ---------
+Total Dynamic Power    = 192.4138 uW  (100%)
+
+Cell Leakage Power     =  30.0343 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential        88.2135            0.3243        9.0960e+06           97.6338  (  43.89%)
+combinational     62.7426           41.1332        2.0938e+07          124.8147  (  56.11%)
+--------------------------------------------------------------------------------------------------
+Total            150.9561 uW        41.4576 uW     3.0034e+07 pW       222.4485 uW
+1
